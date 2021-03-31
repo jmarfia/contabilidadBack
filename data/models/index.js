@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const Movement = require("./movement")
 
 
-const url = "mongodb+srv://contable:contable@contable.loqyg.mongodb.net/test";
+const url = "mongodb+srv://useradmin:useradmin1@clustercontable.loqyg.mongodb.net/test";
 
 console.log("connecting to", url);
 
