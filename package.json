@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jmarfia/contabilidad.git"
+    "url": "git+https://github.com/jmarfia/contabilidadBack.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jmarfia/contabilidad/issues"
+    "url": "https://github.com/jmarfia/contabilidadBack/issues"
   },
-  "homepage": "https://github.com/jmarfia/contabilidad#readme",
+  "homepage": "https://github.com/jmarfia/contabilidadBack#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
