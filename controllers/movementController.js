@@ -1,4 +1,5 @@
 const { Movement } = require("../data/models");
+var ObjectId = require('mongodb').ObjectID;
 
 module.exports = {
     movements(req, res) {
@@ -25,4 +26,17 @@ module.exports = {
             return res.json(savedMovement);
         });
     },
+
+    deleteMovement(req, res) {
+        let id = req.params.id;
+        Movement.findByIdAndRemove( id, function (err, docs) {
+            if (err){
+                res.status(400)
+                res.send("error")
+            }
+            else{
+                res.json({"Removed User": docs});
+            }
+        } )
+      },
 }

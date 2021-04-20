@@ -1,10 +1,9 @@
 const mongoose = require("mongoose");
-
 const Movement = require("./movement")
 const User = require("./user")
 
 
-const url = "mongodb+srv://useradmin:useradmin1@clustercontable.loqyg.mongodb.net/test";
+const url = process.env.MONGO_DB_URL;
 
 console.log("connecting to", url);
 
@@ -17,6 +16,6 @@ mongoose
     console.log("error connecting to MongoDB:", error.message);
   });
 
-  const models = { Movement, User };
+const models = { Movement, User };
 
-  module.exports = models;
+module.exports = models;
